@@ -1,0 +1,47 @@
+# ---- Build artifacts ----
+*.o
+*.obj
+*.out
+conv2d_test
+trsm_test
+zgemm_test
+*_test
+*.exe
+
+# ---- Tooling / caches ----
+.cache/
+.vscode/
+.idea/
+*.swp
+*~
+
+# ---- OS junk ----
+.DS_Store
+Thumbs.db
+
+# ---- Docs deliverables (generated, large) ----
+# 保留源码与脚本，忽略最终二进制产物
+
+# ---- chores/ : 报告与基准测试过程产物 ----
+# Typst：只忽略编译出的 PDF（最终 report.pdf 输出到仓库根目录）
+chores/report/*.pdf
+
+# LaTeX 备用（若日后切换）：辅助文件
+chores/report/*.aux
+chores/report/*.log
+chores/report/*.out
+chores/report/*.toc
+chores/report/*.lof
+chores/report/*.lot
+chores/report/*.fls
+chores/report/*.fdb_latexmk
+chores/report/*.synctex.gz
+chores/report/*.bbl
+chores/report/*.blg
+chores/report/*.nav
+chores/report/*.snm
+chores/report/*.vrb
+
+# ---- 基准测试原始日志（体积大，按需手动保留） ----
+chores/bench/*.log
+chores/bench/*.csv
